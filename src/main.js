@@ -3,8 +3,9 @@ import { findTimeZone, getZonedTime } from "timezone-support";
 
 import singleDayPage from "./singleDay.js";
 import forecast from "./7DayForecast.js";
+import logo from "/weather-icons/weather-forecast.png";
 
-document.querySelector(".logo-weather").src = `/weather-forecast.png`;
+document.querySelector(".logo-weather").src = logo;
 
 const api_key = import.meta.env.VITE_API_KEY;
 const baseUrl =
