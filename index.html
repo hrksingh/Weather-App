@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="branding">
+          <div class="logo">
+            <img class="logo-weather" />
+          </div>
+          <div class="banner">Weather</div>
+        </div>
+
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Location"
+            id="location"
+            value="Delhi"
+            autocomplete="on"
+          />
+        </div>
+
+        <div class="temp">
+          <button type="button" class="unit-btn metric selected">°C</button>
+          <button type="button" class="unit-btn fn">°F</button>
+        </div>
+
+        <nav>
+          <button type="button" class="today-btn">Today</button>
+          <button type="button" class="forecast-btn">7 Day Forecast</button>
+        </nav>
+      </header>
+
+      <div class="content"></div>
+      <footer><p>&copy; Ash</p></footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
